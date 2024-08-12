@@ -9,7 +9,7 @@ body {
   position: relative;
   text-align: left;
   color: black;
-  background-color: aquamarine;
+  background-color: #c8e690;
 }
 
 .hero img {
@@ -47,15 +47,26 @@ body {
 .product-item {
   text-align: center;
 }
+.product-item p{
+  padding: 10px;
+}
 
 .product-image {
   position: relative;
   overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 4px 4px 7px 0px; black;
 }
 
 .product-image img {
   width: 100%;
   transition: transform 0.3s ease;
+  
+    
+}
+.img-fluid{
+  border-radius: 15px;
+  
 }
 
 .add-to-cart {
@@ -74,4 +85,6 @@ body {
   background-color: rgb(243, 241, 245);
   opacity: 1;
 }
+
+
 
