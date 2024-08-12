@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>母嬰用品購物網站</title>
+    <!-- 引入Bootstrap 5的CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="mb-4">
+        <!-- 使用Bootstrap的導覽列 -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">MOMMY <br>& BABY</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="brandDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                按品牌分類
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="brandDropdown">
+                                <li><a class="dropdown-item" href="#">品牌1</a></li>
+                                <li><a class="dropdown-item" href="#">品牌2</a></li>
+                                <li><a class="dropdown-item" href="#">品牌3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="babyCareDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                育兒精選
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="babyCareDropdown">
+                                <li><a class="dropdown-item" href="#">精選1</a></li>
+                                <li><a class="dropdown-item" href="#">精選2</a></li>
+                                <li><a class="dropdown-item" href="#">精選3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="mommyProductsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                媽咪用品
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="mommyProductsDropdown">
+                                <li><a class="dropdown-item" href="#">用品1</a></li>
+                                <li><a class="dropdown-item" href="#">用品2</a></li>
+                                <li><a class="dropdown-item" href="#">用品3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="storeInfoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                門市資訊
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="storeInfoDropdown">
+                                <li><a class="dropdown-item" href="#">資訊1</a></li>
+                                <li><a class="dropdown-item" href="#">資訊2</a></li>
+                                <li><a class="dropdown-item" href="#">資訊3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="promoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                優惠活動
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="promoDropdown">
+                                <li><a class="dropdown-item" href="#">活動1</a></li>
+                                <li><a class="dropdown-item" href="#">活動2</a></li>
+                                <li><a class="dropdown-item" href="#">活動3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- 右上角圖標 -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-search"></i> 搜尋</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-person"></i> 會員</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-cart"></i> 購物車</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="hero">
+      <div class="container">
+          <div class="row align-items-center">
+              <!-- 左側文字區域 -->
+              <div class="col-md-6">
+                  <div class="hero-text">
+                      <h2>Driven to <br>deliver your <br>brand's message</h2>
+                      <p>Tully and Drive helps build trust in your business by<br> working with stakeholders to share compelling stories.</p>
+                      <button class="btn btn-light">SHOP NOW</button>
+                  </div>
+              </div>
+              <!-- 右側圖片區域 -->
+              <div class="col-md-6">
+                  <img src="./img/01.jpg" alt="Hero Image" class="img-fluid">
+              </div>
+          </div>
+      </div>
+  </section>
+    
+    <section class="products container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="product-item">
+                    <div class="product-image position-relative">
+                        <img src="./img/002.png" alt="產品1" class="img-fluid">
+                        <button class="btn add-to-cart position-absolute">加入購物車</button>
+                    </div>
+                    <p>寬口奶瓶<br>NT$299</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-item">
+                    <div class="product-image position-relative">
+                        <img src="./img/003.png" alt="產品2" class="img-fluid">
+                        <button class="btn add-to-cart position-absolute">加入購物車</button>
+                    </div>
+                    <p>寬口奶瓶<br>NT$299</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="product-item">
+                    <div class="product-image position-relative">
+                        <img src="./img/004.png" alt="產品3" class="img-fluid">
+                        <button class="btn add-to-cart position-absolute">加入購物車</button>
+                    </div>
+                    <p>寬口奶瓶<br>NT$299</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 引入Bootstrap 5的JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
