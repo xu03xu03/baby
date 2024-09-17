@@ -293,4 +293,26 @@ body {
   background-color: rgb(243, 241, 245);
   opacity: 1;
 }
+/* *******************footer*************** */
+footer h4.text-info {
+  color: #e57373 !important;
+  border-left-color: #e57373 !important; 
+}
+
+footer .form-control {
+  background-color: #fff; 
+  border: 1px solid #ccc; 
+}
+
+
+footer .btn-info {
+  background-color: #e57373; 
+  border-color: #e57373;
+  color: white;
+}
+
+footer .btn-info:hover {
+  background-color: #e0e0ff;
+  border-color: #e0e0ff;
+}
 
