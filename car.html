@@ -1,150 +1,222 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>母嬰用品購物網站</title>
-    <!-- 引入Bootstrap 5的CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles1.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="car.css">
 </head>
+
 <body>
-    <header class="mb-4">
-        <!-- 使用Bootstrap的導覽列 -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">MOMMY <br>& BABY</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="brandDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                按品牌分類
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="brandDropdown">
-                                <li><a class="dropdown-item" href="#">品牌1</a></li>
-                                <li><a class="dropdown-item" href="#">品牌2</a></li>
-                                <li><a class="dropdown-item" href="#">品牌3</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="babyCareDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                育兒精選
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="babyCareDropdown">
-                                <li><a class="dropdown-item" href="#">精選1</a></li>
-                                <li><a class="dropdown-item" href="#">精選2</a></li>
-                                <li><a class="dropdown-item" href="#">精選3</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="mommyProductsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                媽咪用品
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="mommyProductsDropdown">
-                                <li><a class="dropdown-item" href="#">用品1</a></li>
-                                <li><a class="dropdown-item" href="#">用品2</a></li>
-                                <li><a class="dropdown-item" href="#">用品3</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="storeInfoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                門市資訊
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="storeInfoDropdown">
-                                <li><a class="dropdown-item" href="#">資訊1</a></li>
-                                <li><a class="dropdown-item" href="#">資訊2</a></li>
-                                <li><a class="dropdown-item" href="#">資訊3</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="promoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                優惠活動
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="promoDropdown">
-                                <li><a class="dropdown-item" href="#">活動1</a></li>
-                                <li><a class="dropdown-item" href="#">活動2</a></li>
-                                <li><a class="dropdown-item" href="#">活動3</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <!-- 右上角圖標 -->
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="bi bi-search"></i> 搜尋</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="bi bi-person"></i> 會員</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="bi bi-cart"></i> 購物車</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    
-    <section class="hero">
-      <div class="container">
-          <div class="row align-items-center">
-            <!-- 左側圖片區域 -->
-            <div class="col-md-6">
-                <img src="./img/002.png" alt="Hero Image" class="img-fluid">
-            </div>
-              <!-- 右側文字區域 -->
-              <div class="col-md-6">
-                  <div class="hero-text">
-                      <h2>酷咕鴨 KUKU PLUS <br>純真之瞳寬口<br>PPSU奶瓶 300ml(多款選擇)</h2>
-                      <p>產品敘述 helps build trust in your business by<br> working with stakeholders to share compelling stories.</p>
-                      <button class="btn btn-light btn1">加入購物車</button>
-                      <button class="btn btn-light btn2">立即購買</button>
-                  </div>
-              </div>
-              
-          </div>
-      </div>
-  </section>
-    
-    <section class="products">
-        <h3>您可能有興趣的產品</h3>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="product-item">
-                    <div class="product-image position-relative">
-                        <img src="./img/stroller3.png" alt="產品1" class="img-fluid">
-                        <button class="btn add-to-cart position-absolute">加入購物車</button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MOMMY <br>& BABY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">產品目錄</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            品牌特色與服務
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">嬰兒床選購重點</a></li>
+                            <li><a class="dropdown-item" href="#">寶寶順暢喝奶秘訣</a></li>
+                            <li><a class="dropdown-item" href="#">三大保固</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">最新消息</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">聯絡我們</a>
+                    </li>
+                </ul>
+                <div class="nav-item dropdown ms-3 me-3">
+                    <a class="nav-link shopping-cart-icon position-relative" href="#" id="cartDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">5</span> <!-- 這裡的 5 是購物車中的商品數量 -->
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end p-3" aria-labelledby="cartDropdown"
+                        style="width: 300px;">
+                        <h5>購物車內容</h5>
+                        <div class="cart-item">
+                            <img src="./img/baby2.png" alt="Product Image">
+                            <div class="item-info">
+                                <p>立體矽膠防漏圍兜 - $495</p>
+                            </div>
+                            <span class="item-remove">刪除</span>
+                        </div>
+                        <div class="cart-item">
+                            <img src="./img/bag.png" alt="Product Image">
+                            <div class="item-info">
+                                <p>媽媽背包 - $499</p>
+                            </div>
+                            <span class="item-remove">刪除</span>
+                        </div>
+                        <div class="cart-item">
+                            <img src="./img/baby3.png" alt="Product Image">
+                            <div class="item-info">
+                                <p>寶寶洗護5件組 - $1280</p>
+                            </div>
+                            <span class="item-remove">刪除</span>
+                        </div>
+                        <div class="cart-item">
+                            <img src="./img/baby4.png" alt="Product Image">
+                            <div class="item-info">
+                                <p>全效修復膏 - $600</p>
+                            </div>
+                            <span class="item-remove">刪除</span>
+                        </div>
+                        <div class="cart-item">
+                            <img src="./img/003.png" alt="Product Image">
+                            <div class="item-info">
+                                <p>Pigeon母乳奶瓶 - $336</p>
+                            </div>
+                            <span class="item-remove">刪除</span>
+                        </div>
+                        <div class="text-end mt-3">
+                            <strong>總計: $3210</strong>
+                        </div>
+                        <a href="#" class="btn btn-primary w-100 mt-2">結帳</a>
                     </div>
-                    <p>嬰兒推車<br>NT$12990</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="product-item">
-                    <div class="product-image position-relative">
-                        <img src="./img/003.png" alt="產品2" class="img-fluid">
-                        <button class="btn add-to-cart position-absolute">加入購物車</button>
-                    </div>
-                    <p>寬口奶瓶<br>NT$299</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="product-item">
-                    <div class="product-image position-relative">
-                        <img src="./img/004.png" alt="產品3" class="img-fluid">
-                        <button class="btn add-to-cart position-absolute">加入購物車</button>
-                    </div>
-                    <p>寬口奶瓶<br>NT$299</p>
                 </div>
             </div>
         </div>
+    </nav>
+    <!-- Floating Cart Icon -->
+    <div class="floating-cart" id="floatingCart">
+        <div class="cart-toggle position-relative" onclick="toggleCart()">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">5</span>
+        </div>
+        <div class="cart-content" id="cartContent">
+            <h5>購物車內容</h5>
+            <div class="cart-item">
+                <img src="./img/baby2.png" alt="Product Image">
+                <div class="item-info">
+                    <p>立體矽膠防漏圍兜 - $495</p>
+                </div>
+                <span class="item-remove">刪除</span>
+            </div>
+            <div class="cart-item">
+                <img src="./img/bag.png" alt="Product Image">
+                <div class="item-info">
+                    <p>媽媽背包 - $499</p>
+                </div>
+                <span class="item-remove">刪除</span>
+            </div>
+            <div class="cart-item">
+                <img src="./img/baby3.png" alt="Product Image">
+                <div class="item-info">
+                    <p>寶寶洗護5件組 - $1280</p>
+                </div>
+                <span class="item-remove">刪除</span>
+            </div>
+            <div class="cart-item">
+                <img src="./img/baby4.png" alt="Product Image">
+                <div class="item-info">
+                    <p>全效修復膏 - $600</p>
+                </div>
+                <span class="item-remove">刪除</span>
+            </div>
+            <div class="cart-item">
+                <img src="./img/003.png" alt="Product Image">
+                <div class="item-info">
+                    <p>Pigeon母乳奶瓶 - $336</p>
+                </div>
+                <span class="item-remove">刪除</span>
+            </div>
+            <div class="text-end mt-3">
+                <strong>總計: $3210</strong>
+            </div>
+            <a href="#" class="btn btn-primary w-100 mt-2">結帳</a>
+        </div>
     </div>
+
+    <section class="hero py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- 左側圖片區域 -->
+                <div class="col-md-6">
+                    <img src="./img/002.png" alt="Hero Image" class="img-fluid">
+                </div>
+                <!-- 右側文字區域 -->
+                <div class="col-md-6">
+                    <div class="hero-text">
+                        <h2><strong>酷咕鴨 KUKU PLUS</strong> <br><span>純真之瞳寬口<br>PPSU奶瓶 300ml(多款選擇)</span></h2>
+                        <p>產品敘述 helps build trust in your business by working with stakeholders to share compelling stories.</p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary btn1 me-3">加入購物車</button>
+                            <button class="btn btn-outline-primary btn2">立即購買</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- 引入Bootstrap 5的JS -->
+    <section class="products py-5">
+        <h3 class="text-center mb-4">您可能有興趣的產品</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="product-item">
+                        <div class="product-image position-relative">
+                            <img src="./img/stroller.jpg" alt="產品1" class="img-fluid">
+                            <button class="btn add-to-cart position-absolute">加入購物車</button>
+                        </div>
+                        <p class="product-info">時尚嬰兒推車<br><strong>NT$12,990</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-item">
+                        <div class="product-image position-relative">
+                            <img src="./img/stroller3.png" alt="產品2" class="img-fluid">
+                            <button class="btn add-to-cart position-absolute">加入購物車</button>
+                        </div>
+                        <p class="product-info">輕便型嬰兒推車<br><strong>NT$7990</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="product-item">
+                        <div class="product-image position-relative">
+                            <img src="./img/stroller2.png" alt="產品3" class="img-fluid">
+                            <button class="btn add-to-cart position-absolute">加入購物車</button>
+                        </div>
+                        <p class="product-info">多功能嬰兒推車<br><strong>NT$8280</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="scripts.js"></script>
+    <script>
+        function toggleCart() {
+            var cartContent = document.getElementById("cartContent");
+            if (cartContent.style.display === "none" || cartContent.style.display === "") {
+                cartContent.style.display = "block";
+            } else {
+                cartContent.style.display = "none";
+            }
+        }
+    </script>
 </body>
+
 </html>
