@@ -1,205 +1,360 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>母嬰用品購物網站</title>
-    <!-- 引入Bootstrap 5的CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header class="mb-4">
-        <!-- 使用Bootstrap的導覽列 -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">MOMMY <br>& BABY</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="brandDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                商品分類
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="brandDropdown">
-                                <li><a class="dropdown-item" href="#">媽媽</a></li>
-                                <li><a class="dropdown-item" href="#">寶寶</a></li>
-                                <li><a class="dropdown-item" href="#">送禮專區</a></li>
-                                <li><a class="dropdown-item" href="#">人氣推薦</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="babyCareDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                寶寶用品
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="babyCareDropdown">
-                                <li><a class="dropdown-item" href="#">服飾</a></li>
-                                <li><a class="dropdown-item" href="#">奶瓶/奶嘴</a></li>
-                                <li><a class="dropdown-item" href="#">屁屁膏</a></li>
-                                <li><a class="dropdown-item" href="#">防曬</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="mommyProductsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                媽咪用品
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="mommyProductsDropdown">
-                                <li><a class="dropdown-item" href="#">肌膚呵護</a></li>
-                                <li><a class="dropdown-item" href="#">孕期呵護</a></li>
-                                <li><a class="dropdown-item" href="#">植萃精選</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="storeInfoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                門市資訊
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="storeInfoDropdown">
-                                <li><a class="dropdown-item" href="#">台中勤美門市</a></li>
-                                <li><a class="dropdown-item" href="#">台南新光門市</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="promoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                優惠活動
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="promoDropdown">
-                                <li><a class="dropdown-item" href="#">新生兒禮盒組</a></li>
-                                <li><a class="dropdown-item" href="#">待產包優惠組</a></li>
-                                <li><a class="dropdown-item" href="#">指定商品買一送一</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <!-- 右上角圖標 -->
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="bi bi-search"></i> 搜尋</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="bi bi-person"></i> 會員</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="bi bi-cart"></i> 購物車</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    
-    <section class="hero">
-      <div class="container">
-          <div class="row align-items-center">
-              <!-- 左側文字區域 -->
-              <div class="col-md-6">
-                  <div class="hero-text">
-                      <h2>與寶寶一起成長的<br>快樂旅程</h2>
-                      <p>從舒適的寶寶用品到幫助媽媽們保持輕鬆的護理工具<br>讓每一個親子互動都充滿愛與快樂</p>
-                      <button class="btn btn-light">SHOP NOW</button>
-                  </div>
-              </div>
-              <!-- 右側圖片區域 -->
-              <div class="col-md-6">
-                  <img src="./img/01.jpg" alt="Hero Image" class="img-fluid">
-              </div>
-          </div>
-      </div>
-  </section>
-    
-    <section class="products">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="product-item">
-                    <div class="product-image position-relative">
-                        <img src="./img/002.png" alt="產品1" class="img-fluid">
-                        <button class="btn add-to-cart position-absolute"><a href="./car.html">加入購物車</button></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MOMMY <br>& BABY</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">產品目錄</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            品牌特色與服務
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">嬰兒床選購重點</a></li>
+                            <li><a class="dropdown-item" href="#">寶寶順暢喝奶秘訣</a></li>
+                            <li><a class="dropdown-item" href="#">三大保固</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">最新消息</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">聯絡我們</a>
+                    </li>
+                </ul>
+                <div class="nav-item dropdown ms-3 me-3">
+                    <a class="nav-link shopping-cart-icon position-relative" href="#" id="cartDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">5</span> <!-- 這裡的 5 是購物車中的商品數量 -->
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end p-3" aria-labelledby="cartDropdown"
+                        style="width: 300px;">
+                        <h5>購物車內容</h5>
+                        <div class="cart-item">
+                            <img src="./img/baby2.png" alt="Product Image">
+                            <div class="item-info">
+                                <p>立體矽膠防漏圍兜 - $495</p>
+                            </div>
+                            <span class="item-remove">刪除</span>
+                        </div>
+                        <div class="cart-item">
+                            <img src="./img/bag.png" alt="Product Image">
+                            <div class="item-info">
+                                <p>媽媽背包 - $499</p>
+                            </div>
+                            <span class="item-remove">刪除</span>
+                        </div>
+                        <div class="cart-item">
+                            <img src="./img/baby3.png" alt="Product Image">
+                            <div class="item-info">
+                                <p>寶寶洗護5件組 - $1280</p>
+                            </div>
+                            <span class="item-remove">刪除</span>
+                        </div>
+                        <div class="cart-item">
+                            <img src="./img/baby4.png" alt="Product Image">
+                            <div class="item-info">
+                                <p>全效修復膏 - $600</p>
+                            </div>
+                            <span class="item-remove">刪除</span>
+                        </div>
+                        <div class="cart-item">
+                            <img src="./img/003.png" alt="Product Image">
+                            <div class="item-info">
+                                <p>Pigeon母乳奶瓶 - $336</p>
+                            </div>
+                            <span class="item-remove">刪除</span>
+                        </div>
+                        <div class="text-end mt-3">
+                            <strong>總計: $3210</strong>
+                        </div>
+                        <a href="#" class="btn btn-primary w-100 mt-2">結帳</a>
                     </div>
-                    <p>Combi寬口奶瓶(任選3)<br>NT$999</p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="product-item">
-                    <div class="product-image position-relative">
-                        <img src="./img/003.png" alt="產品2" class="img-fluid">
-                        <button class="btn add-to-cart position-absolute"><a href="./car.html">加入購物車</button></a>
-                    </div>
-                    <p>Pigeon母乳奶瓶<br>NT$336</p>
+        </div>
+    </nav>
+    <!-- Floating Cart Icon -->
+    <div class="floating-cart" id="floatingCart">
+        <div class="cart-toggle position-relative" onclick="toggleCart()">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">5</span>
+        </div>
+        <div class="cart-content" id="cartContent">
+            <h5>購物車內容</h5>
+            <div class="cart-item">
+                <img src="./img/baby2.png" alt="Product Image">
+                <div class="item-info">
+                    <p>立體矽膠防漏圍兜 - $495</p>
                 </div>
+                <span class="item-remove">刪除</span>
             </div>
-            <div class="col-md-4">
-                <div class="product-item">
-                    <div class="product-image position-relative">
-                        <img src="./img/004.png" alt="產品3" class="img-fluid">
-                        <button class="btn add-to-cart position-absolute"><a href="./car.html">加入購物車</button></a>
-                    </div>
-                    <p>Simba防脹氣奶瓶300ML<br>NT$399</p>
+            <div class="cart-item">
+                <img src="./img/bag.png" alt="Product Image">
+                <div class="item-info">
+                    <p>媽媽背包 - $499</p>
                 </div>
+                <span class="item-remove">刪除</span>
             </div>
-            <div class="col-md-4">
-                <div class="product-item">
-                    <div class="product-image position-relative">
-                        <img src="./img/baby.png" alt="產品2" class="img-fluid">
-                        <button class="btn add-to-cart position-absolute"><a href="./car.html">加入購物車</button></a>
-                    </div>
-                    <p>新生兒包屁衣+襪子3件組<br>NT$1580</p>
+            <div class="cart-item">
+                <img src="./img/baby3.png" alt="Product Image">
+                <div class="item-info">
+                    <p>寶寶洗護5件組 - $1280</p>
                 </div>
+                <span class="item-remove">刪除</span>
             </div>
-            <div class="col-md-4">
-                <div class="product-item">
-                    <div class="product-image position-relative">
-                        <img src="./img/baby1.png" alt="產品2" class="img-fluid">
-                        <button class="btn add-to-cart position-absolute"><a href="./car.html">加入購物車</button></a>
-                    </div>
-                    <p>新生兒包屁衣<br>NT$999</p>
+            <div class="cart-item">
+                <img src="./img/baby4.png" alt="Product Image">
+                <div class="item-info">
+                    <p>全效修復膏 - $600</p>
                 </div>
+                <span class="item-remove">刪除</span>
             </div>
-            <div class="col-md-4">
-                <div class="product-item">
-                    <div class="product-image position-relative">
-                        <img src="./img/baby2.png" alt="產品2" class="img-fluid">
-                        <button class="btn add-to-cart position-absolute"><a href="./car.html">加入購物車</button></a>
-                    </div>
-                    <p>立體矽膠防漏圍兜<br>NT$495</p>
+            <div class="cart-item">
+                <img src="./img/003.png" alt="Product Image">
+                <div class="item-info">
+                    <p>Pigeon母乳奶瓶 - $336</p>
                 </div>
+                <span class="item-remove">刪除</span>
             </div>
-
-            <div class="col-md-4">
-                <div class="product-item">
-                    <div class="product-image position-relative">
-                        <img src="./img/baby3.png" alt="產品2" class="img-fluid">
-                        <button class="btn add-to-cart position-absolute"><a href="./car.html">加入購物車</button></a>
-                    </div>
-                    <p>寶寶洗護5件組<br>NT$1580</p>
-                </div>
+            <div class="text-end mt-3">
+                <strong>總計: $3210</strong>
             </div>
-            <div class="col-md-4">
-                <div class="product-item">
-                    <div class="product-image position-relative">
-                        <img src="./img/baby4.png" alt="產品2" class="img-fluid">
-                        <button class="btn add-to-cart position-absolute"><a href="./car.html">加入購物車</button></a>
-                    </div>
-                    <p>全效修復膏<br>NT$600</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="product-item">
-                    <div class="product-image position-relative">
-                        <img src="./img/baby5.png" alt="產品2" class="img-fluid">
-                        <button class="btn add-to-cart position-absolute"><a href="./car.html">加入購物車</button></a>
-                    </div>
-                    <p>彈力美膚油(3款)<br>NT$1680</p>
-                </div>
-            </div>
-
+            <a href="#" class="btn btn-primary w-100 mt-2">結帳</a>
         </div>
     </div>
+
+    <section class="hero">
+        <div class="container h-100 w-100">
+            <div class="row align-items-center h-100">
+                <!-- 左邊文字區塊 -->
+                <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-center text-center text-lg-start">
+                    <div class="hero-text">
+                        <h2>與寶寶一起成長的<br>快樂旅程</h2>
+                        <p>從舒適的寶寶用品到幫助媽媽們保持輕鬆的護理工具<br>讓每一個親子互動都充滿愛與快樂</p>
+                        <button class="btn btn-light">SHOP NOW</button>
+                    </div>
+                </div>
+                <!-- 右邊圖片區塊 -->
+                <div class="col-lg-6 col-md-12 d-flex justify-content-center">
+                    <img src="./img/01.jpg" alt="Hero Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- 引入Bootstrap 5的JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="scripts.js"></script>
-</body>
-</html>
+    <section class="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="product-item">
+                        <div class="product-image position-relative">
+                            <img src="./img/002.png" alt="產品1" class="img-fluid">
+                            <button class="btn add-to-cart position-absolute"><a href="./car.html">加入購物車</button></a>
+                        </div>
+                        <p>Combi寬口奶瓶(任選3)<br>NT$999</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="product-item">
+                        <div class="product-image position-relative">
+                            <img src="./img/003.png" alt="產品2" class="img-fluid">
+                            <button class="btn add-to-cart position-absolute"><a href="./car.html">加入購物車</button></a>
+                        </div>
+                        <p>Pigeon母乳奶瓶<br>NT$336</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="product-item">
+                        <div class="product-image position-relative">
+                            <img src="./img/004.png" alt="產品3" class="img-fluid">
+                            <button class="btn add-to-cart position-absolute"><a href="./car.html">加入購物車</button></a>
+                        </div>
+                        <p>Simba防脹氣奶瓶300ML<br>NT$399</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="product-item">
+                        <div class="product-image position-relative">
+                            <img src="./img/baby.png" alt="產品2" class="img-fluid">
+                            <button class="btn add-to-cart position-absolute"><a href="./car.html">加入購物車</button></a>
+                        </div>
+                        <p>新生兒包屁衣+襪子3件組<br>NT$1580</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="product-item">
+                        <div class="product-image position-relative">
+                            <img src="./img/baby1.png" alt="產品2" class="img-fluid">
+                            <button class="btn add-to-cart position-absolute"><a href="./car.html">加入購物車</button></a>
+                        </div>
+                        <p>新生兒包屁衣<br>NT$999</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="product-item">
+                        <div class="product-image position-relative">
+                            <img src="./img/baby2.png" alt="產品2" class="img-fluid">
+                            <button class="btn add-to-cart position-absolute"><a href="./car.html">加入購物車</button></a>
+                        </div>
+                        <p>立體矽膠防漏圍兜<br>NT$495</p>
+                    </div>
+                </div>
 
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="product-item">
+                        <div class="product-image position-relative">
+                            <img src="./img/baby3.png" alt="產品2" class="img-fluid">
+                            <button class="btn add-to-cart position-absolute"><a href="./car.html">加入購物車</button></a>
+                        </div>
+                        <p>寶寶洗護5件組<br>NT$1580</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="product-item">
+                        <div class="product-image position-relative">
+                            <img src="./img/baby4.png" alt="產品2" class="img-fluid">
+                            <button class="btn add-to-cart position-absolute"><a href="./car.html">加入購物車</button></a>
+                        </div>
+                        <p>全效修復膏<br>NT$600</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="product-item">
+                        <div class="product-image position-relative">
+                            <img src="./img/baby5.png" alt="產品2" class="img-fluid">
+                            <button class="btn add-to-cart position-absolute"><a href="./car.html">加入購物車</button></a>
+                        </div>
+                        <p>彈力美膚油(3款)<br>NT$1680</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleCart() {
+            var cartContent = document.getElementById("cartContent");
+            if (cartContent.style.display === "none" || cartContent.style.display === "") {
+                cartContent.style.display = "block";
+            } else {
+                cartContent.style.display = "none";
+            }
+        }
+    </script>
+</body>
+<footer class="py-5 bg-light">
+    <div class="container border-bottom">
+        <div class="row gx-5">
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 col-sm-8 col-10">
+                <img src="img/logo.png" class="mb-3" width="70%" alt="" />
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum harum quam modi dolorum reiciendis
+                    maxime, nemo veniam dolores cumque quo.</p>
+                <ul class="list-unstyled d-flex">
+                    <li>
+                        <a class="pe-3 link-secondary" href="#"><i class="fab h4 fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a class="pe-3 link-secondary" href="#"><i class="fab h4 fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a class="pe-3 link-secondary" href="#"><i class="fab h4 fa-twitter-square"></i></a>
+                    </li>
+                    <li>
+                        <a class="pe-3 link-secondary" href="#"><i class="fas h4 fa-envelope"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-block d-lg-none"></div>
+            <div class="col-lg-2 col-md-3 col-6">
+                <h4 class="text-info h5 border-start border-3 border-info ps-2 mb-3">Link Title</h4>
+                <ul class="list-unstyled ps-2">
+                    <li class="pb-3">
+                        <a href="#" class="link-secondary">Link Name</a>
+                    </li>
+                    <li class="pb-3">
+                        <a href="#" class="link-secondary">Link Name</a>
+                    </li>
+                    <li class="pb-3">
+                        <a href="#" class="link-secondary">Link Name</a>
+                    </li>
+                    <li class="pb-3">
+                        <a href="#" class="link-secondary">Link Name</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6">
+                <h4 class="text-info h5 border-start border-3 border-info ps-2 mb-3">Link Title</h4>
+                <ul class="list-unstyled ps-2">
+                    <li class="pb-3">
+                        <a href="#" class="link-secondary">Link Name</a>
+                    </li>
+                    <li class="pb-3">
+                        <a href="#" class="link-secondary">Link Name</a>
+                    </li>
+                    <li class="pb-3">
+                        <a href="#" class="link-secondary">Link Name</a>
+                    </li>
+                    <li class="pb-3">
+                        <a href="#" class="link-secondary">Link Name</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6">
+                <h4 class="text-info h5 border-start border-3 border-info ps-2 mb-3">Link Title</h4>
+                <ul class="list-unstyled ps-2">
+                    <li class="pb-3">
+                        <a href="#" class="link-secondary">Link Name</a>
+                    </li>
+                    <li class="pb-3">
+                        <a href="#" class="link-secondary">Link Name</a>
+                    </li>
+                    <li class="pb-3">
+                        <a href="#" class="link-secondary">Link Name</a>
+                    </li>
+                    <li class="pb-3">
+                        <a href="#" class="link-secondary">Link Name</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-6">
+                <h4 class="text-info h5 border-start border-3 border-info ps-2 mb-3">Subscribe</h4>
+                <form>
+                    <input class="form-control mb-1" type="text" placeholder="Your Email" />
+                    <button class="btn btn-info w-100" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-5">
+        <p class="text-muted small m-0">@copyright 2099 company name</p>
+    </div>
+</footer>
+
+</html>
